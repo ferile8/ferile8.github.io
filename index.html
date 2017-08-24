@@ -225,18 +225,19 @@
 	</section>
 
 	<section class="contacts" id="contacts">
-		<form name="contactform" method="post" action="send_mail.php" class="contact_form">
-			<input type="text" name="name" minlength="2" maxlength="50" size="30" class="form_input" required placeholder="I am talking with..." autocomplete="off">
+		<div id="contact_form">
+			<form name="contactform" method="post" action="send_mail.php" class="contact_form">
+				<input type="text" name="name" minlength="2" maxlength="50" size="30" class="form_input" required placeholder="I am talking with..." autocomplete="off">
 
-			<input type="email" name="email" maxlength="80" size="30" class="form_input" required placeholder="Please insert your e-mail" autocomplete="off">
-			<input type="text" name="subject" maxlength="30" size="30" class="form_input" placeholder="The subject of this message">
+				<input type="email" name="email" maxlength="80" size="30" class="form_input" required placeholder="Please insert your e-mail" autocomplete="off">
+				<input type="text" name="subject" maxlength="30" size="30" class="form_input" placeholder="The subject of this message">
 
-			<textarea name="message" maxlength="1000" cols="25" rows="6" class="form_message" required placeholder="Type your message here" autocomplete="off"></textarea>
+				<textarea name="message" maxlength="1000" cols="25" rows="6" class="form_message" required placeholder="Type your message here" autocomplete="off"></textarea>
 
-			<input type="submit" value="Send" class="form_button">
+				<input type="submit" value="Send" class="form_button">
 
-		</form>
-
+			</form>
+		</div>
 		<div class="contacts_info font-avenir-regular">
 			<div class="title_info">
 				<span class="contact">MAIL:</span>
@@ -259,14 +260,15 @@
 	<script type="text/javascript" src="javascript/libraries/gumshoe.js"></script>
 	<script type="text/javascript" src="javascript/script.js"></script>
 	<script>
-    smoothScroll.init({
-      easing : 'easyOutQuint',
-      speed : '1500'
-    }); 
-    gumshoe.init({
-      offset: 100
-    });
-  </script>
+		smoothScroll.init({
+			easing: 'easyOutQuint',
+			speed: '1500'
+		});
+		gumshoe.init({
+			offset: 100
+		});
+
+	</script>
 </body>
 
 </html>
