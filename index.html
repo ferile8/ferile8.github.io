@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ilenia Ferdico Portfolio</title>
+	<meta name="author" content="Antonio Triolo">
+	<meta name="description" content="Personal portfolio with contact and works of Ilenia Ferdico pastry chef">
+	<!-- impedisco lo zoom da smartphone (potrebbe creare problemi con i canvas) -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+	<!-- ******meta tags for social media****** -->
+	<meta property="og:type" content="url" />
+	<meta property="og:url" content="www.ileniaferdico.com" />
+	<meta itemprop="og:headline" content="Ilenia Ferdico Pastry Chef portfolio" />
+	<meta itemprop="og:description" content="This is the personal portfolio for Ilenia Ferdico, gluten and dairy free pastry chef" />
+	<meta property="og:image" content="images/logo.svg" />
+	<!-- ******twitter****** -->
+	<meta name="twitter:url" content="www.ileniaferdico.com" />
+	<meta name="twitter:creator" content="Antonio Triolo" />
+	<meta name="twitter:title" content="Ilenia Ferdico Pastry Chef portfolio" />
+	<meta name="twitter:description" content="This is the personal portfolio for Ilenia Ferdico, gluten and dairy free pastry chef" />
+	<meta name="twitter:image" content="img/logo.svg" />
+	<!-- ******************************** -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/png" href="images/logo.svg">
+</head>
+
+<body>
+	<nav class="navigation" data-gumshoe-header>
+		<a class="logo_link" href="#intro"><img src="images/logo_white.svg" alt="Ilenia Ferdico Pastry Chef" class="logo active"></a>
+		<ul data-gumshoe class="nav_list">
+			<li class="nav_element font-montserrat-regular"><a href="#about" class="nav_link">About</a></li>
+			<li class="nav_element font-montserrat-regular"><a href="#gallery" class="nav_link">Gallery</a></li>
+			<li class="nav_element font-montserrat-regular"><a target="_blank" href="ilenia_ferdico_cv.pdf" class="nav_link">CV</a></li>
+			<li class="nav_element font-montserrat-regular"><a href="#contacts" class="nav_link">Contacts</a></li>
+		</ul>
+		<div class="placeholder"></div>
+	</nav>
+	<section class="intro" id="intro">
+		<div class="name_box">
+			<h1 class="name font-avenir-bold">ilenia ferdico</h1>
+			<h1 class="title font-avenir-bold">gluten and dairy free pastry chef</h1>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="presentation_wrapper">
+			<img src="images/ilenia_self.png" alt="ilenia ferdico with cake" class="img_round">
+			<p class="presentation font-avenir-regular">
+				Hi, I’m Ilenia and I would like to share with you my love for tasty and delicious gluten and dairy free goodies. I was attempting the Professional Pastry School of Gambero Rosso when I found that I’m one of the gluten and dairy intolerants. For Health as a reason, passion and compassion direct my curiosity through a new way to eat and cook, a new world of ingredients: different flours, low and raw sugars.
+			</p>
+			<img src="images/ilenia_self2.jpg" alt="ilenia ferdico with cake" class="img_square">
+		</div>
+	</section>
+	<section class="gallery" id="gallery">
+		<h1 class="gallery_intro font-avenir-demi">Here there are some of my works. <br> All my creation are totally gluten and dairy free.</h1>
+		<div class="gallery_wrapper">
+			<ul class="gallery_filters">
+				<li class="filter font-montserrat-regular"><button class="button_filter filter_selected" category="sweets">Sweets</button></li>
+				<li class="filter font-montserrat-regular"><button class="button_filter" category="salts">Salts</button></li>
+			</ul>
+
+			<!--gallery-->
+			<div class="scroller_presentation">
+				<div class="work_presentation_wrapper">
+					<div class="work_presentation work1 selected" work="1">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\1.png" src="" alt="dolce &amp; gabbana" class="work_img b-lazy">
+					</div>
+
+					<div class="work_presentation work2" work="2">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\2.png" src="" alt="-AT Milano web application" class="work_img b-lazy">
+					</div>
+
+					<div class="work_presentation work3" work="3">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\3.png" src="" alt="digital service design" class="work_img b-lazy">
+					</div>
+
+					<div class="work_presentation work4" work="4">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\4.png" src="" alt="game design" class="work_img b-lazy">
+					</div>
+
+					<div class="work_presentation work5 salt" work="5" type="salt">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\5.png" src="" alt="tuesdays digital magazine" class="work_img b-lazy">
+					</div>
+
+					<div class="work_presentation work6 salt" work="6" type="salt">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\6.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work7 salt" work="7" type="salt">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\7.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work9" work="9">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\9.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work10" work="10">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\10.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work11" work="11">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\11.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work12" work="12">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\12.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work13" work="13">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\13.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work14" work="14">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\14.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work15" work="15">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\15.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work16" work="16">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\16.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work17" work="17">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\17.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work18" work="18">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\18.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work19" work="19">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\19.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work20" work="20">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\20.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work21" work="21">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\21.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work22" work="22">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\22.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work23 salt" work="23" type="salt">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\23.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work24 salt" work="24" type="salt">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\24.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work25 salt" work="25" type="salt">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\25.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work26" work="26">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\26.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work27" work="27">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\27.png" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work28" work="28">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\28.jpeg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work29" work="29">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\29.jpeg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work30" work="30">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\30.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation 31" work="31">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\31.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work32" work="32">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\32.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work33 salt" work="33" type="salt">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\33.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work34" work="34">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\34.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work35" work="35">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\35.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work36" work="36">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\36.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work37" work="37">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\37.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work38" work="38">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\38.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+					<div class="work_presentation work39" work="39">
+						<span class="description font-avenir-regular display-none">best cake in the world, totally diary and gluten free, made with a lot of love!</span>
+						<img data-src="images\works\39.jpg" src="" alt="Responsive web pages" class="work_img b-lazy">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts" id="contacts">
+		<form name="contactform" method="post" action="send_mail.php" class="contact_form">
+			<input type="text" name="name" minlength="2" maxlength="50" size="30" class="form_input" required placeholder="I am talking with..." autocomplete="off">
+
+			<input type="email" name="email" maxlength="80" size="30" class="form_input" required placeholder="Please insert your e-mail" autocomplete="off">
+			<input type="text" name="subject" maxlength="30" size="30" class="form_input" placeholder="The subject of this message">
+
+			<textarea name="message" maxlength="1000" cols="25" rows="6" class="form_message" required placeholder="Type your message here" autocomplete="off"></textarea>
+
+			<input type="submit" value="Send" class="form_button">
+
+		</form>
+
+		<div class="contacts_info font-avenir-regular">
+			<div class="title_info">
+				<span class="contact">MAIL:</span>
+				<span class="contact">MOBILE:</span>
+				<span class="contact">SKYPE:</span>
+			</div>
+			<div class="info_text">
+				<a target="_blank" href="mailto:ileniaferdico.do@gmail.com"><span class="info">ileniaferdico.do@gmail.com</span></a>
+				<span class="info">+393200105128</span>
+				<span class="info">sepideh-to</span>
+			</div>
+		</div>
+	</section>
+
+	<!--	includo le librerie javascript -->
+	<script language="javascript" type="text/javascript" src="javascript/libraries/jquery-3.1.1.min.js"></script>
+	<script type='text/javascript' src='javascript/libraries/jquery.mousewheel.js'></script>
+	<script language="javascript" type="text/javascript" src="javascript/libraries/blazy.min.js"></script>
+	<script type="text/javascript" src="javascript/libraries/smooth-scroll.js"></script>
+	<script type="text/javascript" src="javascript/libraries/gumshoe.js"></script>
+	<script type="text/javascript" src="javascript/script.js"></script>
+	<script>
+    smoothScroll.init({
+      easing : 'easyOutQuint',
+      speed : '1500'
+    }); 
+    gumshoe.init({
+      offset: 100
+    });
+  </script>
+</body>
+
+</html>
