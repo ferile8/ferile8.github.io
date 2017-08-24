@@ -13,7 +13,7 @@ jQuery(document).ready(function () {
 			jQuery(".work_presentation").not(".salt").css("display", "none");
 		}
 		var bLazy = new Blazy({
-			offset: 30000,
+			offset: 50000,
 			success: function (element) {}
 		});
 	};
@@ -26,7 +26,7 @@ jQuery(document).ready(function () {
 	});
 
 	var bLazy = new Blazy({
-		offset: 30000,
+		offset: 50000,
 		success: function (element) {}
 	});
 
@@ -37,7 +37,7 @@ jQuery(document).ready(function () {
 			this.scrollLeft -= (delta * 1);
 			event.preventDefault();
 			var bLazy = new Blazy({
-				offset: 30000,
+				offset: 50000,
 				success: function (element) {}
 			});
 
