@@ -26,13 +26,13 @@
 </head>
 
 <body>
-	<nav class="navigation" data-gumshoe-header>
-		<a class="logo_link" href="#intro"><img src="images/logo_white.svg" alt="Ilenia Ferdico Pastry Chef" class="logo active"></a>
-		<ul data-gumshoe class="nav_list">
-			<li class="nav_element font-montserrat-regular"><a href="#about" class="nav_link">About</a></li>
-			<li class="nav_element font-montserrat-regular"><a href="#gallery" class="nav_link">Gallery</a></li>
-			<li class="nav_element font-montserrat-regular"><a target="_blank" href="ilenia_ferdico_cv.pdf" class="nav_link">CV</a></li>
-			<li class="nav_element font-montserrat-regular"><a href="#contacts" class="nav_link">Contacts</a></li>
+	<nav class="navigation">
+		<a data-scroll class="logo_link" href="#intro"><img src="images/logo_white.svg" alt="Ilenia Ferdico Pastry Chef" class="logo"></a>
+		<ul class="nav_list">
+			<li class="nav_element font-montserrat-regular"><a data-scroll href="#about" class="nav_link link_about">About</a></li>
+			<li class="nav_element font-montserrat-regular"><a data-scroll href="#gallery" class="nav_link link_gallery">Gallery</a></li>
+			<li class="nav_element font-montserrat-regular"><a target="_blank" href="ilenia_ferdico_cv.pdf" class="nav_link link_cv">CV</a></li>
+			<li class="nav_element font-montserrat-regular"><a data-scroll href="#contacts" class="nav_link link_contacts">Contacts</a></li>
 		</ul>
 		<div class="placeholder"></div>
 	</nav>
@@ -244,19 +244,12 @@
 	<script language="javascript" type="text/javascript" src="javascript/libraries/jquery-3.1.1.min.js"></script>
 	<script type='text/javascript' src='javascript/libraries/jquery.mousewheel.js'></script>
 	<script language="javascript" type="text/javascript" src="javascript/libraries/blazy.min.js"></script>
-	<script type="text/javascript" src="javascript/libraries/smooth-scroll.js"></script>
-	<script type="text/javascript" src="javascript/libraries/gumshoe.js"></script>
+	<script type="text/javascript" src="javascript/libraries/smooth-scroll.min.js"></script>
+	<script type="text/javascript" src="javascript/script.js"></script>
 	<script>
-		smoothScroll.init({
-			easing: 'easyOutQuint',
-			speed: '1500'
-		});
-		gumshoe.init({
-			offset: 100
-		});
+		var scroll = new SmoothScroll('a[href*="#"]');
 
 	</script>
-	<script type="text/javascript" src="javascript/script.js"></script>
 </body>
 
 </html>

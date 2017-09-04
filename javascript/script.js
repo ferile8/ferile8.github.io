@@ -1,6 +1,26 @@
 jQuery(document).ready(function () {
 	jQuery.noConflict();
 
+	function Utils() {}
+
+	Utils.prototype = {
+		constructor: Utils,
+		isElementInView: function (element, fullyInView) {
+			var pageTop = jQuery(window).scrollTop();
+			var pageBottom = pageTop + jQuery(window).height() * 0.7;
+			var elementTop = jQuery(element).offset().top;
+			var elementBottom = elementTop + jQuery(element).height();
+
+			if (fullyInView === true) {
+				return ((pageTop < elementTop) && (pageBottom > elementBottom));
+			} else {
+				return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+			}
+		}
+	};
+
+	var Utils = new Utils();
+
 	function filter_images() {
 		var selection = jQuery(".filter_selected").attr("category");
 
@@ -53,13 +73,42 @@ jQuery(document).ready(function () {
 			jQuery(this).find(".description").addClass("display-none");
 		});
 
-		jQuery(".nav_link").click(function(){
+
+
+	function change_selector() {
+		var aboutView = Utils.isElementInView(jQuery('#about'), false);
+		var galleryView = Utils.isElementInView(jQuery('#gallery'), false);
+		var contactsView = Utils.isElementInView(jQuery('#contacts'), false);
+		var introView = Utils.isElementInView(jQuery('#intro'), false);
+
+		if (aboutView) {
 			jQuery(".nav_link").removeClass("nav_link_selected");
-			jQuery(this).addClass("nav_link_selected");
-		});
-	
-	jQuery(".logo_link").click(function(){
+			jQuery(".link_about").addClass("nav_link_selected");
+		}
+		if (galleryView) {
+			jQuery(".nav_link").removeClass("nav_link_selected");
+			jQuery(".link_gallery").addClass("nav_link_selected");
+		}
+		if (contactsView) {
+			jQuery(".nav_link").removeClass("nav_link_selected");
+			jQuery(".link_contacts").addClass("nav_link_selected");
+		}
+		if (introView) {
+			jQuery(".nav_link").removeClass("nav_link_selected");
+		}
+
+	}
+
+	jQuery(window).scroll(function () {
+		change_selector();
+	});
+
+	jQuery(".nav_link").click(function () {
+		jQuery(".nav_link").removeClass("nav_link_selected");
+		jQuery(this).addClass("nav_link_selected");
+	});
+
+	jQuery(".logo_link").click(function () {
 		jQuery(".nav_link").removeClass("nav_link_selected");
 	})
-	
 });
