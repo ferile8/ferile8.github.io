@@ -114,7 +114,7 @@ jQuery(document).ready(function () {
 
  jQuery('.a.grouped_elements').fancybox({
   beforeShow : function(){
-   this.title =  $(this.element).data("caption");
+   this.title =  jQuery(this.element).data("caption");
   }
  });
 
