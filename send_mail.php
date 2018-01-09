@@ -11,6 +11,6 @@
     mail("ileniaferdico.do@gmail.com", $name . " -- " . $subject, $message, $headers);
     
     //redirigo alla home
-    header("Location: index.html");
-    die();
+    //header("Location: index.html");
+    exit();
 ?>
